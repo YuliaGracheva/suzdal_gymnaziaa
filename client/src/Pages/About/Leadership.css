@@ -1,0 +1,100 @@
+.leadership-main-info {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    line-height: 1.7;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.leadership-main-info p {
+    font-size: 14pt;
+    margin: 0.7em 0;
+    color: #555;
+}
+
+.leadership-main-info p:first-child {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 1.5rem;
+}
+
+.leadership-main-info p:first-child a {
+    color: #7a5b98;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.leadership-main-info p:first-child a:hover {
+    text-decoration: underline;
+}
+
+.leadership-info {
+    background: #f9f7fb;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(122, 91, 152, 0.1);
+}
+
+.leadership-info h1 {
+    font-size: 28px;
+    color: #5d4d7a;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.leadership-info h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #7a5b98;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+.leader-card {
+    background-color: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leader-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.leader-card h2 {
+    font-size: 20pt;
+    color: #7a5b98;
+    margin-bottom: 15px;
+}
+
+.leader-card p {
+    font-size: 14pt;
+    color: #555;
+    margin: 5px 0;
+}
+
+.leader-card strong {
+    color: #5d4d7a;
+}
+
+@media (max-width: 768px) {
+    .leadership-main-info {
+        padding: 1.5rem;
+    }
+
+    .leadership-info {
+        padding: 1.5rem;
+    }
+
+    .leader-card {
+        padding: 18px;
+    }
+}

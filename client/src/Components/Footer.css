@@ -1,0 +1,257 @@
+.footer {
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #555;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    border-top: 1px solid #eee;
+}
+
+.purple-footer-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f4f0f8;
+    padding: 1.5rem 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    min-width: 200px;
+}
+
+.footer-h {
+    font-size: 12pt;
+    color: #7a5b98;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+}
+
+.contact-text {
+    font-size: 12pt;
+    line-height: 1.4;
+    color: #555;
+}
+
+.contact-text a {
+    color: #7a5b98;
+    text-decoration: underline;
+}
+
+.useful-resurs-white {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    margin-top: 1.5rem;
+}
+
+.block {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.block img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.block:hover {
+    transform: scale(1.05);
+}
+
+.block p {
+    font-size: 8pt;
+    color: #7a5b98;
+}
+
+.map-footer {
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.map-footer iframe {
+    display: block;
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+}
+
+.yellow-footer-down {
+    background-color: #fff1c5;
+    padding: 1.5rem 1rem;
+    color: #7a5b98;
+    margin: 0;
+    border-top: 1px solid #f4f0f8;
+}
+
+.footer-down-name {
+    font-size: 16pt;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.footer-down-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.footer-down-call-me {
+    flex: 1;
+    min-width: 260px;
+}
+
+.footer-down-call-me-info h3,
+.footer-down-developer-info h3 {
+    font-size: 14pt;
+    margin-bottom: 0.8rem;
+}
+
+.footer-down-call-me-info label {
+    font-size: 12pt;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.call-me-text-area {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 12pt;
+    resize: none;
+    margin-bottom: 0.8rem;
+}
+
+.call-me-button {
+    background-color: #7a5b98;
+    color: #fff;
+    padding: 8px 18px;
+    font-size: 12pt;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+.call-me-button:hover {
+    background-color: #6a4d85;
+    transform: scale(1.05);
+}
+
+.footer-down-developer-info {
+    flex: 1;
+    min-width: 260px;
+}
+
+.footer-down-developer-info p,
+.footer-down-developer-info a {
+    font-size: 12pt;
+    margin: 0.3rem 0;
+    color: #555;
+}
+
+.footer-down-developer-info a {
+    color: #7a5b98;
+    text-decoration: underline;
+}
+
+.footer-social-links {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: #7a5b98;
+}
+
+.footer-social-links h3 {
+    font-size: 12pt;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-social-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social-links li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.footer-social-links a {
+    display: flex;
+    align-items: center;
+    color: #7a5b98;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+.footer-social-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social-links .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    fill: #7a5b98;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #a773ac;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #6c4370;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .purple-footer-contact {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .useful-resurs-white {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .footer-down-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block {
+        width: 100%;
+    }
+
+    .call-me-button {
+        width: auto;
+    }
+}

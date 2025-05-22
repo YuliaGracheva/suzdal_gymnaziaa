@@ -1,0 +1,106 @@
+.olympiad-main-info {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    line-height: 1.7;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.olympiad-main-info p {
+    font-size: 14pt;
+    margin: 0.7em 0;
+    color: #555;
+}
+
+.olympiad-main-info p:first-child {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 1.5rem;
+}
+
+.olympiad-main-info p:first-child a {
+    color: #7a5b98;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.olympiad-main-info p:first-child a:hover {
+    text-decoration: underline;
+}
+
+.olympiad-main-info h1 {
+    font-size: 28px;
+    color: #5d4d7a;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.olympiad-main-info h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #7a5b98;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+.table-wrapper {
+    margin-top: 2rem;
+    overflow-x: auto;
+}
+
+.olympiad-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.olympiad-table th,
+.olympiad-table td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14pt;
+    color: #555;
+}
+
+.olympiad-table th {
+    background-color: #9f83b9;
+    color: white;
+    font-weight: 600;
+}
+
+.olympiad-table td {
+    background-color: #f9f9f9;
+}
+
+.olympiad-table tr:nth-child(even) td {
+    background-color: #f0f0f0;
+}
+
+.olympiad-table tr:hover td {
+    background-color: #e8d7f1;
+}
+
+@media (max-width: 768px) {
+    .olympiad-main-info {
+        padding: 1.5rem;
+    }
+
+    .olympiad-main-info h1 {
+        font-size: 24px;
+    }
+
+    .olympiad-table th,
+    .olympiad-table td {
+        font-size: 12pt;
+    }
+
+    .olympiad-table {
+        font-size: 12pt;
+    }
+}

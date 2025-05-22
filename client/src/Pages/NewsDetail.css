@@ -1,0 +1,159 @@
+.news-detail-info {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  line-height: 1.7;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #7a5b98;
+  font-size: 18pt;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.purple-line {
+  height: 3px;
+  background-color: #9a7cb7;
+  margin: 1rem 0;
+  border-radius: 2px;
+}
+
+h2 {
+  color: #7a5b98;
+  font-size: 18pt;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 14pt;
+  color: #555555;
+  margin: 0.7em 0;
+}
+
+.news-detail {
+  background-color: #fdfdfd;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+}
+
+.news-photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.news-photo {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+a p {
+  margin-top: 2rem;
+  color: #7a5b98;
+  font-weight: bold;
+  font-size: 14pt;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+a p:hover {
+  color: #5d4d7a;
+  text-decoration: underline;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(50, 50, 50, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e8d7f1;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  color: #7a5b98;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.close-modal:hover {
+  background-color: #d1bde2;
+  transform: scale(1.1);
+}
+
+.back-link {
+  margin-top: 2rem;
+  color: #7a5b98;
+  font-weight: bold;
+  font-size: 14pt;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-decoration: underline;
+}
+
+.back-link:hover {
+  color: #5d4d7a;
+}
+
+@media (max-width: 768px) {
+  .news-detail-info {
+    padding: 1.5rem;
+  }
+
+  h1, h2 {
+    font-size: 16pt;
+  }
+
+  .news-photo {
+    width: 100%;
+    height: auto;
+  }
+}
