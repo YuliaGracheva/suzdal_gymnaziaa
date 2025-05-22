@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./css/ImageModal.css";
-import api from `../../../server.js`;
+import api from '../../../server.js';
 
 function ImageModal({ onClose, onSelectImage, endpoint }) {
     const [images, setImages] = useState([]);

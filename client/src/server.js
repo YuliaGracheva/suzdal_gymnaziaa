@@ -5,7 +5,7 @@ const configs = {
         base: "http://localhost:3004",
     },
     production: {
-        base: "https://suzdal-gymnasia.vercel.app",
+        base: "https://suzdal-gymnazia-v2.onrender.com",
     },
 };
 
