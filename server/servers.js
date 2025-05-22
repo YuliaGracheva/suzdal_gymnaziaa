@@ -12,7 +12,7 @@ const fetch = require("node-fetch");
 
 const allowedOrigins = [
     'http://localhost:3000',
-    'https://suzdal-gymnasia.onrender.com'
+    'http://YuliaGracheva.github.io/suzdal_gymnaziaa'
 ];
 
 const corsOptions = {
