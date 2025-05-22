@@ -3,11 +3,9 @@
   "version": "0.1.0",
   "type": "module",
   "private": true,
+  "homepage": "http://YuliaGracheva.github.io/suzdal_gymnaziaa", 
   "dependencies": {
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^6.3.0",
     "@tinymce/tinymce-react": "^6.1.0",
     "axios": "^1.9.0",
     "bcrypt": "^5.1.1",
@@ -32,7 +30,9 @@
   },
   "scripts": {
     "start": "concurrently \"node servers.js\" \"react-scripts start\"",
-    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build && cp build/index.html build/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
